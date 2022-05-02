@@ -11,7 +11,7 @@ namespace LifeForMoreStamina
 
         public override string Name => "LifeForMoreStamina";
         public override string Author => "Memw#6969";
-        public override Version Version => new Version(1, 0, 1);
+        public override Version Version => new Version(1, 1, 0);
         public override Version RequiredExiledVersion => new Version(5, 1, 3);
 
         public override void OnEnabled()

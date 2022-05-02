@@ -1,10 +1,5 @@
 ﻿using Exiled.API.Interfaces;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LifeForMoreStamina
 {
@@ -12,7 +7,10 @@ namespace LifeForMoreStamina
     {
         public bool IsEnabled { get; set; } = true;
 
-        [Description("Defines how many hp is removed for every time a player runs without stamina.")]
+        [Description("Defines how much HP is removed for every time a player runs without stamina.")]
         public int HpRemoved { get; set; } = 1;
+
+        [Description("Defines how much stamina is added when HP is removed.")]
+        public float StaminaAdded { get; set; } = .05f;
     }
 }

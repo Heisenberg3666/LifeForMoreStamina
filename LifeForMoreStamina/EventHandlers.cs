@@ -9,7 +9,7 @@ namespace LifeForMoreStamina
             if (ev.Player.Stamina.RemainingStamina > .025f)
                 return;
 
-            ev.Player.Stamina.RemainingStamina = .05f;
+            ev.Player.Stamina.RemainingStamina += Plugin.Instance.Config.StaminaAdded;
             ev.Player.Health -= Plugin.Instance.Config.HpRemoved;
         }
     }
